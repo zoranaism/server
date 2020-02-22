@@ -21,7 +21,7 @@ function render (myDay) {
     </head>
 
     <body>
-      <h1>${myDay}</h1>
+      <h1>this is my day ${myDay}</h1>
     </body>
   </html>`
 
@@ -36,6 +36,7 @@ app.get(
     const myDay = `${request.params.day}`
 
     const page = render(myDay)
+
 
     response.send(page)
   }
